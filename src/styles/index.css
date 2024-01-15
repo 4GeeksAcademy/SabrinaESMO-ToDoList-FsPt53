@@ -1,3 +1,12 @@
+body{
+    background-color: rgb(224, 219, 251);
+}
+
+.contentBox{
+    background-color:ghostwhite;
+    border-radius: 20px;
+}
+
 button{
     border: none;
     background-color: transparent;
@@ -12,7 +21,7 @@ li{
 }
 
 .itemContainer{
-    border-style: dashed;
+    border-bottom: solid;
     border-color: rgb(186, 196, 205);
     border-width: 1px;
 }
@@ -21,4 +30,14 @@ li{
     border-style: solid;
     border-color: grey;
     border-width: 1px;
+    border-radius: 20px;
+
+}
+
+.deleteButton {
+    visibility: hidden;
+}
+
+.itemContainer:hover .deleteButton {
+    visibility: visible;
 }

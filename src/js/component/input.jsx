@@ -29,8 +29,8 @@ const Input = () => {
     }
 
     return (
-        <div className="text-center">
-            <h1 className="text-center mt-5">¿Empezamos a organizarnos?</h1>
+        <div className="contentBox text-center w-75 mx-auto p-2 mt-5">
+            <h1 className="text-center mt-1 ">¿Empezamos a organizarnos?</h1>
             <br></br>
             <input type="text" onChange={handleInputChange} onKeyDown={handleKeyDown} value={inputValue} placeholder="Añadir nueva tarea" />
 
@@ -38,10 +38,10 @@ const Input = () => {
                 <h5 className="mt-1 text-center">Lista de tareas pendientes:</h5>
                 <div>{ 
                     list.map((el, i) => (
-                        <li key={i} className="itemContainer text-start">
-                            <i class="fa-solid fa-thumbtack">&emsp;</i>
+                        <li key={i} className="itemContainer  mb-2 text-start position-relative ">
+                            <i>-&emsp;</i>
                             {el}
-                            <button onClick={() => onDelete(i)}><i class="trashCan fa-regular fa-trash-can"></i></button>
+                            <button className="deleteButton position-absolute end-0" onClick={() => onDelete(i)}><i class="trashCan fa-regular fa-trash-can"></i></button>
                         </li>
                     ))
                 }
