@@ -22,14 +22,14 @@ li{
 
 .itemContainer{
     border-bottom: solid;
-    border-color: rgb(186, 196, 205);
+    border-color:rgb(188, 172, 215);
     border-width: 1px;
 }
 
 .listContainer{
     border-style: solid;
-    border-color: grey;
-    border-width: 1px;
+    border-color: rgb(151, 123, 196);
+    border-width: 2px;
     border-radius: 20px;
 
 }
@@ -40,4 +40,12 @@ li{
 
 .itemContainer:hover .deleteButton {
     visibility: visible;
+}
+
+input{
+    padding-left: 15px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 20px;
 }
