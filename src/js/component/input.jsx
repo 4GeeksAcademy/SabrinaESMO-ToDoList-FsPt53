@@ -30,7 +30,7 @@ const Input = () => {
 
     return (
         <div className="contentBox text-center w-75 mx-auto p-2 mt-5">
-            <h1 className="text-center mt-1 ">¿Nos organizamos?</h1>
+            <h1 className="text-center mt-1 ">PRO To-Do-List</h1>
             <br></br>
             <input type="text" onChange={handleInputChange} onKeyDown={handleKeyDown} value={inputValue} placeholder="Añadir nueva tarea" />
 
